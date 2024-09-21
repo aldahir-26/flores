@@ -1,0 +1,11 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.container');
+    const colors = ['#FFD700', '#FFA000', '#FFF176', '#FBC02D'];
+
+    function changeBackground() {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        container.style.backgroundColor = randomColor;
+    }
+
+    setInterval(changeBackground, 2000); // Cambia el color de fondo cada 2 segundos
+});
